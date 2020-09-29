@@ -1,0 +1,46 @@
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+    font-weight: bold;
+}
+ h1{
+     font-size: 48;
+     padding: 0px 0px 0px 0px;
+     font-family: times;
+     <!--text-aligncenter;-->
+     transition: all 0.7s ease;
+ }
+ h1:hover{
+     opacity: 0.4;
+     transition: 0.8s;
+ }
+p a{
+    transition: all 0.8s ease;
+    padding: 10px 10px 10px 10px;
+}
+p a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    opacity: 1;
+}
+.course li{
+    font-size: 26px;
+    font-family: times;
+    padding-right: 120px;
+    padding-bottom: 13px;
+    font-variant: small-caps;
+}
+.expand {
+    transition: all 0.8s ease;
+}
+.expand:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+    font-size: 36;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+ p{
+     font-family: times;
+     padding: 5px 5px 15px 25px;
+
+ }

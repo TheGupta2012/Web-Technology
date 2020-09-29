@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Fundamentals</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>
+            Basic Javascript Implementations
+        </h1>
+        <p> Given below are four basic functions implemented using
+            JS -
+        </p>
+        <ul>
+            <li>
+                <button type="button" onclick="fun()">
+                    Display Today's Date
+                </button>
+            </li>
+
+            <li> Calculating the factorial of a number<br/>
+             Enter number : <input type="text" name = "fact" id="factorial">
+             <button type="submit" onclick="factorial1()"> SUBMIT</button>
+             <span style=" margin-left : 40px"> OR </span>
+             <button type="submit" onclick="factorial2()"> Click to Enter Number </button>
+            </li>
+
+            <li>
+                Calculating the table of a number<br/>
+                Enter number : <input type="text" name ="mult" id = "multiply">
+                <button type="submit" onclick ="table1()"> SUBMIT</button>
+                <span style=" margin-left : 40px"> OR </span>
+                <button type="submit" onclick="table2()"> Click to Enter Number </button>
+            </li>
+            <li> <button type="submit" onclick = "sum_n()"> Sum of numbers </button>
+            </li>
+        </ul>
+    </body>
+    <script type="text/javascript">
+        function fun()
+        {
+            var d = new Date();
+            var y = d.getFullYear();
+            var m = d.getMonth() + 1;
+            var day = d.getDate();
+            alert("Today's date is :" + y + "-" + m + "-" + day);
+        }
+        function factorial1()
+        {
+            var n = document.getElementById("factorial").value;
+            if(!n)
+                {
+                alert("Please enter a number first");
+                return;
+                }
+            var N = parseInt(n);
+            var res = 1;
+            for (var i = 1; i <= N; i++) {
+                res = res*i;
+            }
+            alert("Factorial of "+N+" is "+res);
+        }
+        function factorial2()
+        {
+            var n = window.prompt("Enter the number :");
+            if(!n)
+                {
+                alert("Please enter a number first");
+                return;
+                }
+            var N = parseInt(n);
+            var res = 1;
+            for (var i = 1; i <= N; i++) {
+                res = res*i;
+            }
+            alert("Factorial of "+N+" is "+res);
+        }
+        function table1()
+        {   var table = "";
+            var num = parseInt(document.getElementById("multiply").value);
+            if(!num)
+                {
+                alert("Please enter a number first");
+                return;
+                }
+            //document.write(num);
+            for (var i = 1; i <= 10; i++) {
+                var res = num*i;
+                table += (num + 'x' + i + '=' + res +'\n');
+            }
+            alert("Your multiplication table is \n"+table);
+        }
+        //var fact = parseInt(document.getElementByID("factorial"));
+        function table2()
+        {   var table = "";
+            var num = window.prompt("Enter the number :");
+            //document.write(num);
+            if(!num)
+                {
+                alert("Please enter a number first");
+                return;
+                }
+            for (var i = 1; i <= 10; i++) {
+                var res = num*i;
+                table += (num + 'x' + i + '=' + res +'\n');
+            }
+            alert("Your multiplication table is \n"+table);
+        }
+        function sum_n()
+        {
+            var res = 0;
+            while(true)
+            {
+                var num = window.prompt("Enter number :");
+                res+= parseInt(num);
+
+                var ask = window.prompt("Want to enter more?(Y/N)");
+                if(ask=="YES" || ask=="yes" || ask=="Yes"||ask=="y" || ask=="Y")
+                    continue;
+                else {
+                    break;
+                }
+            }
+            alert("Your sum is "+ res);
+        }
+    </script>
+</html>

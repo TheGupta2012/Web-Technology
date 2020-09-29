@@ -1,0 +1,32 @@
+h1{
+    font-family:times;
+    text-align:center;
+}
+h4{
+    text-align:center;
+    background-color:rgba(0,0,0,0.3);
+    transition: all 1s ease;
+}
+h4:hover{
+    background-color:rgba(0,0,0,0.1);
+    transition : 1s;
+    transform:scale(1.5);
+    /*text-color:rgba(0,0,0,1);*/
+}
+img{
+    float : right;
+    opacity :0.9;
+    padding : 15px 15px 15px 15px;
+    width : 320px;
+    height : 360px;
+    transition: all 1s ease;
+}
+img:hover{
+    transition: 1s;
+}
+div{
+    font-family:times;
+    padding : 15px 15px 15px 15px;
+}
+body{
+    background-image: url('back_texture2.png');
