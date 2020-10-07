@@ -5,16 +5,7 @@
         <link name="viewport" content="width=device-width , initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <title>Input form</title>
-        <script>
-            function validate()
-            {
-                var fname = document.getElementsByName('Fname');
-                    if(fname.size()<6)
-                    {
-                        alert("Please enter valid first name");
-                    }
-            }
-        </script>
+
     </head>
     <body>
         <h1>Registration Form </h1>
@@ -42,19 +33,97 @@
         <br>
         <form id = "form1" name="register" class="left fifty">
             <p><label> First name :</label>
-            <input type="text" name="Fname" ></p><br>
+            <input type="text" id="Fname" ></p><br>
             <p><label > E-mail ID :</label>
-            <input type="text" name="email" ></p><br>
+            <input type="text" id="email" ></p><br>
             <p><label > Password :</label>
-            <input type="password" name="pass"></p><br>
+            <input type="password" id="pass"></p><br>
             <p><label > Mobile No. :</label>
-            <input type="text" name="mobile"></p><br>
+            <input type="text" id="mobile"></p><br>
             <p><label > Last name :</label>
-            <input type="text" name="Lname"></p><br>
+            <input type="text" id="Lname"></p><br>
             <p><label > Address :</label>
-            <input type="text" name="address"></p><br>
-            <button type="submit" onsubmit="validate()">
+            <input type="text" id="address"></p><br>
+            <button type="submit" onclick="validate()">
                 Submit</button>
         </form>
+
+        <script>
+            function invalidFirst(k)
+            {
+                if(isNan(k))
+                    return false;
+                else
+                    return true;
+            }
+            function valid(a)
+            {
+                var i = parseInt(a);
+                if(a>=65 && a<91) return true;
+                if(a>=97 && a<123) return true;
+                return false;
+            }
+            function validate()
+            {
+                var fname = document.getElementById("Fname").value;
+                    if(parseInt(fname.length)< 6)
+                    {
+                        {alert("Please enter valid first name, atleast 6 characters.");
+                        return;}
+                    }
+                    for(var j in fname)
+                    {
+                        if(!valid(fname.charCodeAt(j)))
+                            {alert("Please enter your name again as it does \nnot contain alphabets only");
+                            return;}
+                    }
+
+                    var email = document.getElementById("email").value;
+                    email = email.split('@');
+                    if(email.length>2) 
+                    {
+                        alert("Invalid email entered.");
+                        return ;
+                    }
+                    var domain = email[1];
+                    var user = email[0];
+                    domain = domain.split('.');
+                    if(domain[1]!= "com" || parseInt(domain.length)>2 || invalidFirst(user[0]))
+                        {
+                            alert("Invalid email entered.");
+                            return ;
+                        }
+
+                    var pass = document.getElementById("pass").value;
+                    if(parseInt(pass.length)<6)
+                    {
+                        alert("Invalid password length");
+                        return;
+                    }
+
+
+
+                var mobile = document.getElementById("mobile").value;
+                if(parseInt(mobile.length)!=10)
+                {
+                    alert("Enter valid mobile number");
+                    return ;
+                }
+
+                var lname =  document.getElementById("Lname").value;
+                if(lname == NULL)
+                    {
+                        alert("Please enter your last name");
+                        return ;
+                    }
+                var addr = document.getElementById("address").value;
+                if(address == NULL)
+                {
+                    alert("Please enter your address.");
+                    return ;
+                }
+
+            }
+        </script>
     </body>
 </html>
