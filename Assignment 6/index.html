@@ -14,7 +14,7 @@
         <br>
         <div class = "left fifty">
             <h2> Conditions </h2>
-            <ol> <font size = 4px>
+            <ol> <font size = 3>
                 <li type='a'>First Name should consist of alphabets and minimum length should be 6.</li><br>
                 <li type = 'a'> Email must follow standard email patterns with a handle name followed by an <b>@</b> sign
                     and then the domain name</li><br>
@@ -49,18 +49,14 @@
         </form>
 
         <script>
-            function invalidFirst(k)
-            {
-                if(isNan(k))
-                    return false;
-                else
-                    return true;
-            }
+
             function valid(a)
             {
                 var i = parseInt(a);
-                if(a>=65 && a<91) return true;
-                if(a>=97 && a<123) return true;
+                if(a>=65 && a<91)
+                    return true;
+                if(a>=97 && a<123)
+                    return true;
                 return false;
             }
             function validate()
@@ -71,39 +67,49 @@
                         {alert("Please enter valid first name, atleast 6 characters.");
                         return;}
                     }
-                    for(var j in fname)
+                    var flag = false;
+                    for(var j of fname)
                     {
-                        if(!valid(fname.charCodeAt(j)))
+                        if(!valid(j.charCodeAt()))
                             {alert("Please enter your name again as it does \nnot contain alphabets only");
-                            return;}
+                            flag = true;
+                            break;}
                     }
-
+                    if(flag==true) return ;
                     var email = document.getElementById("email").value;
-                    email = email.split('@');
-                    if(email.length>2) 
+                    if(!email)
                     {
-                        alert("Invalid email entered.");
+                        alert("Please enter email");
                         return ;
                     }
-                    var domain = email[1];
-                    var user = email[0];
-                    domain = domain.split('.');
-                    if(domain[1]!= "com" || parseInt(domain.length)>2 || invalidFirst(user[0]))
+                    var ema = email.split('@');
+                    var domain = ema[1];
+                    var user = ema[0];
+                    var dom = domain.split('.');
+                    if(dom[1]!= "com" || (parseInt(dom.length)!=2) )
                         {
                             alert("Invalid email entered.");
                             return ;
                         }
 
                     var pass = document.getElementById("pass").value;
+                    if(!pass)
+                    {
+                        alert("Please enter your password");
+                        return ;
+                    }
                     if(parseInt(pass.length)<6)
                     {
                         alert("Invalid password length");
                         return;
                     }
 
-
-
                 var mobile = document.getElementById("mobile").value;
+                if(!mobile)
+                {
+                    alert("Please enter your mobile");
+                    return ;
+                }
                 if(parseInt(mobile.length)!=10)
                 {
                     alert("Enter valid mobile number");
@@ -111,17 +117,20 @@
                 }
 
                 var lname =  document.getElementById("Lname").value;
-                if(lname == NULL)
+
+                if(!lname)
                     {
                         alert("Please enter your last name");
                         return ;
                     }
                 var addr = document.getElementById("address").value;
-                if(address == NULL)
+                if(!addr)
                 {
                     alert("Please enter your address.");
                     return ;
                 }
+
+                alert("Your registraion has been done!");
 
             }
         </script>
