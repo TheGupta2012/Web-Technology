@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="bookstyle.xsl"?>
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+<bookstore>
+    <book>
+        <title>Da Vinci Code</title>
+        <author>Dan Brown</author>
+        <ISBN>123-456-789</ISBN>
+        <publisher>Penguin books</publisher>
+        <edition>Original</edition>
+        <price>400</price>
+    </book>
+    <book>
+        <title>Computer Architecture and Design</title>
+        <author>Morris M. Mano</author>
+        <ISBN>143-256-879</ISBN>
+        <publisher>Pearson</publisher>
+        <edition>Ninth</edition>
+        <price>350</price>
+    </book>
+    <book>
+        <title>Database Systems</title>
+        <author>Korth</author>
+        <ISBN>987-223-456</ISBN>
+        <publisher>Arihant</publisher>
+        <edition>Fifth</edition>
+        <price>300</price>
+    </book>
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Cormen</author>
+        <ISBN>435-987-112</ISBN>
+        <publisher>Pearson</publisher>
+        <edition>Eleventh</edition>
+        <price>600</price>
+    </book>
+    <book>
+        <title>Digital Logic Design</title>
+        <author>Morris M. Mano</author>
+        <ISBN>112-345-674</ISBN>
+        <publisher>Pearson</publisher>
+        <edition>Fourth</edition>
+        <price>350</price>
+    </book>
+    <book>
+        <title>Elements of Discrete Mathematics</title>
+        <author>C.L. Liu</author>
+        <ISBN>342-998-675</ISBN>
+        <publisher>McGraw Hill Education</publisher>
+        <edition>Fourth</edition>
+        <price>400</price>
+    </book>
+    <book>
+        <title>Let Us C</title>
+        <author>yashvant Kanetkar</author>
+        <ISBN>321-887-652</ISBN>
+        <publisher>Arihant</publisher>
+        <edition>Fifteenth</edition>
+        <price>300</price>
+    </book>
+    <book>
+        <title>7 Habits of highly effective people</title>
+        <author>Stephen R. Covey</author>
+        <ISBN>232-093-673</ISBN>
+        <publisher>Penguin Books</publisher>
+        <edition>Twenty Fifth</edition>
+        <price>300</price>
+    </book>
+</bookstore>
