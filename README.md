@@ -3,6 +3,11 @@
 You can use the [editor on GitHub](https://github.com/TheGupta2012/Web-Technology/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+# Web Technology 
+
+My practice sites from my college's Web Technology course have been hosted here. These websites include the use of HTML, CSS and Javascript functionalities.
+
+- [The first profile I created for myself](https://github.com/TheGupta2012/Web-Technology/blob/master/Assignment%201/My%20profile.html)
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
