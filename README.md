@@ -1,36 +1,9 @@
-## Welcome to GitHub Pages
+# Web Technology 
 
-You can use the [editor on GitHub](https://github.com/TheGupta2012/Web-Technology/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My practice sites from my college's Web Technology course have been hosted here. These websites include the use of HTML, CSS and Javascript functionalities.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheGupta2012/Web-Technology/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [The first **profile** I created for myself](https://thegupta2012.github.io/Web-Technology/Assignment%201/My%20profile.html)
+- [A simple book catalogue created for college](https://thegupta2012.github.io/Web-Technology/Assignment%202/index.html)
+- [Sample page for Feynman's book review](https://thegupta2012.github.io/Web-Technology/Assignment%203/external.html)
+- [A site displaying country information which uses JS functionality](https://thegupta2012.github.io/Web-Technology/Assignment%205/index.html)
+- [A registration form created with validations at each stage](https://thegupta2012.github.io/Web-Technology/Assignment%206/index.html)
