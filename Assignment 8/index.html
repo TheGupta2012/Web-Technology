@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='style.css'>
+        <title>Electricity Bills</title>
+    </head>
+    <body>
+        <img id="logo" src="reliance.png" height=140px width = 140px>
+        <h1 id="main"> Welcome to Reliance Electricity
+        </h1>
+        <div class = "bar-red">
+            Welcome to the bill calculation facility for Reliance customers
+        </div>
+        <div class = "info">
+            <h3>Details of Bill </h3>
+            <span>Below are the rates that are applied
+            for the calculation of your bill.
+            Please cross check the calculations before
+            submitting your bill.</span>
+            <table class = "rates">
+                <thead>
+                        <th>S.NO</th>
+                        <th align="center">UNITS CONSUMED</th>
+                        <th>RATE</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1.</td>
+                        <td> < 100 </td>
+                        <td> Rs. 3/unit</td>
+                    </tr>
+                    <tr>
+                        <td> 2.</td>
+                        <td> Between 100 and 200 </td>
+                        <td> Rs. 4/unit</td>
+                    </tr><tr>
+                        <td> 3.</td>
+                        <td> Between 200 and 300 </td>
+                        <td> Rs. 5/unit</td>
+                    </tr><tr>
+                        <td> 4.</td>
+                        <td> >300 </td>
+                        <td> Rs. 6/unit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        <div class="user-info">
+            <form action="bill.php" method="post">
+            <h2> Start of the month reading </h2>
+            <input type="number" name="start" placeholder="Please enter reading"><br><br>
+            <h2> End of the month reading </h2>
+            <input type="number" name="end" placeholder="Please enter reading">
+            <input class="sub-button" type="submit" name = "submit_unit">
+        </form>
+        </div>
+
+    </body>
+</html>

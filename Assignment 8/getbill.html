@@ -1,0 +1,17 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Bill Generated...</title>
+</head>
+<body>
+    <?php
+    $start = $_POST["start"];
+    $end = $_POST["end"];
+    if ($start > $end){
+        echo "<h2> You have entered wrong data.<br>
+        Please enter correct data</h2>
+        <a href="index.html"><button> Go back</button></a>";
+    }
+        ?>
+</body>

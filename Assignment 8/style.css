@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+h2{
+    margin: 10px;
+    font-size: 1.7em;
+    font-family: helvetica;
+    background-color: rgba(240,0,20,0.2);
+    width: 38%;
+    padding: 5px;
+    box-shadow: 4px 5px cyan;
+}
+#main{
+    font-size: 65px;
+    font-family: helvetica;
+    letter-spacing: 4px;
+    color: rgba(250, 100, 0, 0.6);
+    font-weight: bolder;
+    margin: 20px 0px 0px 10px;
+    padding: 10px;
+}
+#logo{
+    margin: 10px 20px 10px 10px;
+    padding: 5px;
+    float: right;
+    position: relative;
+    right: 10px;
+    bottom: 15px;
+    align-content: space-around;
+}
+.info {
+    width: 40%;
+    margin: 10px;
+    margin-right: 3%;
+    font-family: times;
+    float: right;
+}
+.bar-red{
+    background-color: rgba(100,0,0,0.2);
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1.4em;
+    font-family: calibri;
+    font-weight: bolder;
+}
+.rates td, .rates th {
+    font-family: calibri light;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+}
+.user-info{
+    margin: 10px;
+    margin-left: 5%;
+}
+input{
+    margin: 10px;
+    padding: 5px;
+    width: 230px;
+    font-size: 20px;
+    border: 3px solid black;
+    border-style:  double;
+}
+.sub-button{
+    margin: 10px;
+    padding :5px;
+    font-size: 20px;
+    background-color: beige;
+    border: 1px solid black;
+
+}
+.sub-button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
