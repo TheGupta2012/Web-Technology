@@ -5,7 +5,6 @@
         <link name="viewport" content="width=device-width , initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <title>Input form</title>
-
     </head>
     <body>
         <h1>Registration Form </h1>
@@ -87,10 +86,10 @@
                     var user = ema[0];
                     var dom = domain.split('.');
                     if(dom[1]!= "com" || (parseInt(dom.length)!=2) )
-                        {
+                    {
                             alert("Invalid email entered.");
                             return ;
-                        }
+                    }
 
                     var pass = document.getElementById("pass").value;
                     if(!pass)
